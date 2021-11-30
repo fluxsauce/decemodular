@@ -1,0 +1,31 @@
+{
+  "name": "decemodular",
+  "version": "1.0.0",
+  "description": "A month of Modular Synthesizer learnings",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluxsauce/decemodular.git"
+  },
+  "keywords": [
+    "modular",
+    "synth",
+    "eleventy",
+    "education",
+    "learning",
+    "tutorial"
+  ],
+  "author": "jpeck@fluxsauce.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fluxsauce/decemodular/issues"
+  },
+  "homepage": "https://github.com/fluxsauce/decemodular#readme",
+  "dependencies": {
+    "eleventy": "^1.0.6"
+  }
+}
