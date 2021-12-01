@@ -1,0 +1,10 @@
+---
+title: Exercises
+layout: layouts/base.njk
+permalink: /exercises/
+eleventyNavigation:
+  key: Exercises
+  order: 2
+---
+{% set postslist = collections.days %}
+{% include "components/postslist.njk" %}

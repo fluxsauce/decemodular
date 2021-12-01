@@ -1,15 +1,16 @@
 {
-  "name": "decemodular",
+  "name": "eleventy",
   "version": "1.0.0",
   "description": "A month of Modular Synthesizer learnings",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fluxsauce/decemodular.git"
+    "clean": "rimraf _site",
+    "serve:webpack": "webpack --mode development --watch",
+    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "serve": "npm-run-all clean --parallel serve:*",
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build": "NODE_ENV=production run-s clean build:*"
   },
   "keywords": [
     "modular",
@@ -20,12 +21,21 @@
     "tutorial"
   ],
   "author": "jpeck@fluxsauce.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fluxsauce/decemodular/issues"
-  },
-  "homepage": "https://github.com/fluxsauce/decemodular#readme",
+  "license": "CC BY-NC-SA 4.0",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "autoprefixer": "^10.4.0",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^6.2.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.19",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "postcss": "^8.4.4"
   }
 }
