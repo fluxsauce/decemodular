@@ -1,7 +1,7 @@
 {
   "name": "eleventy",
   "version": "1.0.0",
-  "description": "A month of Modular Synthesizer learnings",
+  "description": "A month long course of Modular Synthesizer learnings",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf _site",
