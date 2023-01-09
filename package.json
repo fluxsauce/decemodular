@@ -23,7 +23,7 @@
   "author": "jpeck@fluxsauce.com",
   "license": "CC BY-NC-SA 4.0",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.2",
     "autoprefixer": "^10.4.0",
     "css-loader": "^6.5.1",
